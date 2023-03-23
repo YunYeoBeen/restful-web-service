@@ -4,3 +4,22 @@ server:
 logging:
   level:
     org.springframework: DEBUG
+
+spring:
+  messages:
+    basename: messages
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+jpa:
+  show-sql: true
+
+h2:
+  console:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
